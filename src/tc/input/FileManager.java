@@ -1,15 +1,14 @@
-package tc;
+package tc.input;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import java.io.InputStream;
-
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import tc.Constants;
+import tc.Main;
 
 public class FileManager {
 

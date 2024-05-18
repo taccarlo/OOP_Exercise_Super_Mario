@@ -1,10 +1,10 @@
 package tc;
 
+import tc.input.FileManager;
 import tc.parsing.CommandsParser;
 import tc.points.PointCounter;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
