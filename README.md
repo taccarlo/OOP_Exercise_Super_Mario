@@ -47,7 +47,7 @@ Effects:
 Point increment based on "Scoring system", based on the monster type.
 If points > 1000 Life count +1 and points-=1000 (from "Example A").
 With the previous behaviour that means the score is never higher than initial value + 999.
-Basing on R3 if we have previous action "ConsecutivelyJumpOn" or "Jump" we increment life by one.
+Basing on R3 if we have previous action "ConsecutivelyJumpOn" we increment life by one assuming that other actions are actions that make Mario touching the ground.
 
 ### Invincible<Monster type>
 Life count: -1

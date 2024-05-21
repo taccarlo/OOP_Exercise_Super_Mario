@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875a6dd7-e112-4d81-a581-658ff01032d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tc/actions/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tc/interfaces/Monster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tc/monsters/BanzaiBill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tc/monsters/BeachKoopa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tc/monsters/BigBoo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tc/monsters/Blargg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tc/util/MonsterPoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tc/builder/ActionBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tc/game/GameCreation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/input/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/parsing/CommandsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/parsing/CommandsParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
