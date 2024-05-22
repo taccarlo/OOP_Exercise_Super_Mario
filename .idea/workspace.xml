@@ -10,23 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875a6dd7-e112-4d81-a581-658ff01032d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperMario-seq.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SuperMario-seq.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/actions/ConsecutivelyJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/actions/ConsecutivelyJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/input/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/input/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/interfaces/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/interfaces/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/monsters/BanzaiBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/monsters/BanzaiBill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/monsters/BeachKoopa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/monsters/BeachKoopa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/monsters/BigBoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/monsters/BigBoo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/monsters/Blargg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/monsters/Blargg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/parsing/CommandsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/parsing/CommandsParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/points/PointCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/points/PointCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/util/MonsterPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/util/MonsterPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/test/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/test/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/test/actions/ConsecutivelyJumpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/test/actions/ConsecutivelyJumpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/test/points/PointCounterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/test/points/PointCounterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
