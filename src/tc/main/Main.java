@@ -39,11 +39,18 @@ public class Main {
         LOGGER.info("Action sequence ArrayList: "+actions);
 
         PointCounter pc = new PointCounter(actions);
-        int points = pc.pointsCounting();
-        LOGGER.info( "Punti contati in "+actions+" "+points);
-        //pc.getIfDeathDuringGame();
-        //pc.getLifeCountAfterGame();
-        //pc.pointCounter(tc.main.actions);
+        boolean win = pc.gameSimulation();
+
+        if(win){
+            System.out.println("Winning game, life count never went down to zero.");
+        }
+        else{
+            System.out.println("Fail, life count went down to zero at least one time.");
+        }
+
+        System.out.println("Points: "+pc.getPoints());
+        System.out.println("Lives: "+pc.getLives());
+        System.out.println("Action received: "+actions.toString());
 
         /*
 

@@ -1,14 +1,10 @@
 package tc.main.actions;
 
 public class Coin extends Action{
-    @Override
-    public void effects() {
-
-    }
 
     @Override
     public int pointChanges() {
-        return 5;
+        return 10;
     }
 
     @Override

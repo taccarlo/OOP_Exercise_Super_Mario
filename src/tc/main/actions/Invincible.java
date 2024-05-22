@@ -1,10 +1,6 @@
 package tc.main.actions;
 
 public class Invincible extends Action{
-    @Override
-    public void effects() {
-
-    }
 
     @Override
     public int pointChanges() {
@@ -13,6 +9,6 @@ public class Invincible extends Action{
 
     @Override
     public int lifeChanges() {
-        return 0;
+        return -1;
     }
 }

@@ -14,15 +14,14 @@ public class PointCounter {
 
     Constants c = new Constants();
     private int points = c.defaultPoints();
-    private int life = c.defaultLifeNumber();
+    private int lives = c.defaultLifeNumber();
     //Is final to not rebind the variable to point to a different collection instance
     private final ArrayList<Action> actionsList;
 
     public PointCounter(ArrayList<String> actions){
-
         LOGGER.setLevel(Level.ALL);
+        actionsList = new ArrayList<Action>();
         this.iterate(actions);
-         actionsList = new ArrayList<Action>();
     }
 
     private void iterate(ArrayList<String> actions) {
@@ -42,18 +41,10 @@ public class PointCounter {
                     actionsList.add(new Fireball());
                 }
                 else if(isStartingWith(act, "consecutivelyjumpon")){
-                    /*
-                        Banzai_Bill: 200 points
-                        Beach_Koopa: 400 points
-                        Big_Boo: 800 points
-                        Blargg: 1600 points
-                        ex. ConsecutivelyJumpOnBlargg
-
-                     */
+                    // ex. ConsecutivelyJumpOnBlargg
                     String monster = this.getMonster(act);
 
-                    // I choose this algorithm only to apply a case of Build design pattern
-
+                    // I choose this algorithm only to apply a case of Build design pattern, it could be done in simpler ways
                     switch (monster) {
                         case "banzai_bill":
                             actionsList.add(new ConsecutivelyJump.ConsecutivelyJumpBuilder().setMonster(new BanzaiBill()).build());
@@ -74,7 +65,7 @@ public class PointCounter {
 
                 }
                 else{
-                    LOGGER.severe("Unexpected Action.");
+                    LOGGER.severe("Unexpected Action \""+act+"\".");
 
                 }
 
@@ -90,13 +81,47 @@ public class PointCounter {
 
     public boolean isStartingWith(String a, String b){
         int l = b.length();
+        if(a.length()<b.length())
+            return false;
         return a.substring(0,l).toLowerCase().compareTo(b)==0;
     }
 
-    public int pointsCounting(){
+    public boolean gameSimulation(){
+        boolean win = true;
+        boolean lastWasCJ=false;
+        int pointsGained = 0;
         for(Action act: actionsList){
+
+                // R3: if last was consecutivelyJump life count +1
+                boolean isCJ = act instanceof ConsecutivelyJump;
+                if(isCJ && lastWasCJ){
+                    lives++;
+                }
+                lastWasCJ=isCJ;
+
                 points+=act.pointChanges();
+
+                // based on Example A, everytime we gained 1000 points we gain a
+                // life but remove that amount of points from the total
+                // see README.md file
+                pointsGained += act.pointChanges();
+                if(pointsGained/1000>0){
+                    lives++;
+                    pointsGained-=1000;
+                    points-=1000;
+                }
+
+                lives+=act.lifeChanges();
+                if(lives<=0) {
+                    win = false;
+                }
         }
+        return win;
+    }
+    public int getPoints(){
         return points;
+    }
+    public int getLives(){
+        return lives;
     }
 }

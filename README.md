@@ -7,7 +7,7 @@ Brief Game Rules
 1. R1 Super Mario, is our hero, he springs around the world, takes all the Coins he meets.
 2. R2 Super Mario has enemies. If an enemy kills Super Mario, a life is lost. When all lives have been lost, the game ends.
 3. R3 Super Mario can get extra lives by jumping each enemy consecutively without touching the ground.
-4. R4 Super Mario can earn 5 coins by defeating enemies with fireballs.
+4. R4 Super Mario can earn 50 coins by defeating enemies with fireballs.
 5. R5 When Mario reaches 1000 points, he gets an additional life.
 
 ## Example "A"
@@ -15,8 +15,11 @@ If you have: "ConsecutivelyJumpOnBanzai_Bill,FireballOnBanzaiBill, Coin,Coin,Coi
 you earn 200+50+10+10+10+1600 points, but you lose a life but... 1600 = 600 points+1 life so you earn 600+280 points without loosing a life.
 
 ## Scoring System
-Coin: 10 Points
-Consecutively jump on enemies:
+
+### Get a single Coin
+10 Points
+
+### Consecutively jump on enemies
 - Banzai_Bill: 200 points
 - Beach_Koopa: 400 points
 - Big_Boo: 800 points
@@ -27,13 +30,14 @@ I choose to develop the project in Java 22.
 
 ## Assumptions
 - I will remove points to get a life every time points gained are over 1000.
-- I will always assume that default points value is 2000 and life default value is 3
+- I will ALWAYS assume that default points value is 2000 and life default value is 3
+- I will assume that fireball earning coins are 50 basing on example A and not 5 as written in R4 on given text.
 
 ## Pattern design used
+- Creational Pattern Design "Build" in ConsecutivelyJump.java
 
 ## About the testing
-
-## Executing the jar
+I used JUnit5.8.1 and I placed the tests in the package test.
 
 ## Example of input
 In file "SuperMario-seq.txt"
@@ -52,7 +56,7 @@ assuming other actions involve Mario touching the ground.
 
 ### Invincible<Monster type>
 Life count: -1
-If Life count reaches 0 the game ends
+If Life count reaches 0 the game is marked as "Fail"
 
 ### FireballOn<Monster type>
 Effects: 5 points

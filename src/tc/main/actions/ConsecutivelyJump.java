@@ -3,10 +3,6 @@ import tc.main.interfaces.Monster;
 
 public class ConsecutivelyJump extends Action{
     private int pointChanged=0;
-    @Override
-    public void effects() {
-
-    }
 
     @Override
     public int pointChanges() {

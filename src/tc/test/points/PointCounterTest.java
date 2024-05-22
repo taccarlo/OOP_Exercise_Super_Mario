@@ -24,4 +24,5 @@ class PointCounterTest {
         assertEquals(pc.getMonster("ConsecutivelyJumpOnBlargg"), "Blargg".toLowerCase());
         assertEquals(pc.getMonster("ConsecutivelyJumpOnBig_Boo"), "Big_Boo".toLowerCase());
     }
+
 }
