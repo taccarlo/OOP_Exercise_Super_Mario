@@ -1,6 +1,6 @@
-package tc.monsters;
-import tc.interfaces.Monster;
-import tc.util.MonsterPoints;
+package tc.main.monsters;
+import tc.main.interfaces.Monster;
+import tc.main.util.MonsterPoints;
 
 public class Blargg implements Monster {
     @Override

@@ -1,8 +1,8 @@
-package tc;
+package tc.main;
 
-import tc.input.FileManager;
-import tc.parsing.CommandsParser;
-import tc.points.PointCounter;
+import tc.main.input.FileManager;
+import tc.main.parsing.CommandsParser;
+import tc.main.points.PointCounter;
 
 import java.util.ArrayList;
 import java.util.logging.Logger;
@@ -14,7 +14,6 @@ import java.util.logging.Level;
  * @author Carlo Tacchella
  * @version v0.0.1
  */
-
 
 public class Main {
     private static final Logger LOGGER = Logger.getLogger( Main.class.getName() );
@@ -28,7 +27,7 @@ public class Main {
 
         FileManager fm = new FileManager();
 
-        // get tc.input text from the file
+        // get tc.main.input text from the file
         String input = fm.getInput();
 
         LOGGER.info("Action sequence read: "+input);
@@ -40,21 +39,17 @@ public class Main {
         LOGGER.info("Action sequence ArrayList: "+actions);
 
         PointCounter pc = new PointCounter(actions);
-        LOGGER.info( "Punti contati in "+actions+" "+pc.getPoints());
-        //pc.getPoint();
+        int points = pc.pointsCounting();
+        LOGGER.info( "Punti contati in "+actions+" "+points);
         //pc.getIfDeathDuringGame();
         //pc.getLifeCountAfterGame();
+        //pc.pointCounter(tc.main.actions);
 
         /*
-        pc.pointCounter(tc.actions);
-        //example of builder
-        //example of interface
-        //example of abstract class
-        //example of tests
-        //export executable
+
+        //export executable example
         //javadoc
         //Exception handling custom
-        //commentare tutto e mettere in chatgpt il readme
          */
 
     }

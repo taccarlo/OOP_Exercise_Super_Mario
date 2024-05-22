@@ -1,7 +1,7 @@
-package tc.monsters;
+package tc.main.monsters;
 
-import tc.interfaces.Monster;
-import tc.util.MonsterPoints;
+import tc.main.interfaces.Monster;
+import tc.main.util.MonsterPoints;
 
 public class BanzaiBill implements Monster {
     @Override

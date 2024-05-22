@@ -1,4 +1,4 @@
-package tc;
+package tc.main;
 public class Constants {
 
     // This file could be improved moving the properties in a property file.

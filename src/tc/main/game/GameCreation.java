@@ -1,4 +1,4 @@
-package tc.game;
+package tc.main.game;
 
 import java.util.ArrayList;
 
@@ -8,7 +8,7 @@ public class GameCreation {
     }
 
     private void CreateGame(ArrayList<String> actions) {
-        Action l;
+       // Action l;
         for(String i : actions){
             //se è una coin uso un oggetto specifico
             //se è un invincible uso un oggetto specifico
@@ -17,7 +17,6 @@ public class GameCreation {
             //se è un consecutively jump
 
           // se è un mostro uso un builder
-             l = ActionBuilder.newAction().name()
 
         }
     }

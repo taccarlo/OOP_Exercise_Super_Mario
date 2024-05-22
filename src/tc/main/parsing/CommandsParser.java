@@ -1,6 +1,6 @@
-package tc.parsing;
+package tc.main.parsing;
 
-import tc.Main;
+import tc.main.Main;
 
 import java.util.ArrayList;
 import java.util.StringTokenizer;

@@ -1,4 +1,4 @@
-package tc.util;
+package tc.main.util;
 
 public final class MonsterPoints {
     public static final int BANZAIBILL = 200;

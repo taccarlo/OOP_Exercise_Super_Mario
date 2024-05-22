@@ -5,11 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875a6dd7-e112-4d81-a581-658ff01032d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tc/builder/ActionBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tc/game/GameCreation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tc/main/actions/Coin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tc/main/actions/ConsecutivelyJump.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tc/main/actions/Fireball.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tc/main/actions/Invincible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tc/main/points/PointCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tc/test/actions/ConsecutivelyJumpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tc/test/points/PointCounterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/parsing/CommandsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/parsing/CommandsParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Super Mario.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Super Mario.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/actions/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/builder/ActionBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/builder/ActionBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/game/GameCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/game/GameCreation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/input/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/input/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/interfaces/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/interfaces/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/monsters/BanzaiBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/monsters/BanzaiBill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/monsters/BeachKoopa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/monsters/BeachKoopa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/monsters/BigBoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/monsters/BigBoo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/monsters/Blargg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/monsters/Blargg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/parsing/CommandsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/parsing/CommandsParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/points/PointCounter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/util/MonsterPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/util/MonsterPoints.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -35,19 +55,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/carlotacchella/Desktop/supermario/Super Mario/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.ConsecutivelyJumpTest.ConsecutivelyJumpBuilderTest.executor": "Run",
+    "JUnit.PointCounterTest.executor": "Run",
+    "JUnit.PointCounterTest.getMonsterTest.executor": "Run",
+    "JUnit.PointCounterTest.isStartingWith.executor": "Debug",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Taccarlo/Desktop/super mario/Super-Mario",
+    "onboarding.tips.debug.path": "/Users/carlotacchella/Desktop/supermario/Super Mario/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="tc.interfaces" />
@@ -55,17 +88,95 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="tc.test.actions" />
+      <recent name="tc.test.points" />
+      <recent name="tc.main.points" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tc.main.actions" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ConsecutivelyJumpTest.ConsecutivelyJumpBuilderTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tc.Main" />
+      <option name="MAIN_CLASS_NAME" value="tc.main.Main" />
       <module name="Super Mario" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsecutivelyJumpTest.ConsecutivelyJumpBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Super Mario" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tc.test.actions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tc.test.actions" />
+      <option name="MAIN_CLASS_NAME" value="tc.test.actions.ConsecutivelyJumpTest" />
+      <option name="METHOD_NAME" value="ConsecutivelyJumpBuilderTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PointCounterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Super Mario" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tc.test.points.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tc.test.points" />
+      <option name="MAIN_CLASS_NAME" value="tc.test.points.PointCounterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PointCounterTest.getMonsterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Super Mario" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tc.test.points.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tc.test.points" />
+      <option name="MAIN_CLASS_NAME" value="tc.test.points.PointCounterTest" />
+      <option name="METHOD_NAME" value="getMonsterTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PointCounterTest.isStartingWith" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Super Mario" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tc.test.points.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tc.test.points" />
+      <option name="MAIN_CLASS_NAME" value="tc.test.points.PointCounterTest" />
+      <option name="METHOD_NAME" value="isStartingWith" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConsecutivelyJumpTest.ConsecutivelyJumpBuilderTest" />
+        <item itemvalue="JUnit.PointCounterTest.getMonsterTest" />
+        <item itemvalue="JUnit.PointCounterTest.isStartingWith" />
+        <item itemvalue="JUnit.PointCounterTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -80,5 +191,21 @@
       <updated>1715951477390</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tc/main/points/PointCounter.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="l" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

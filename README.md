@@ -2,9 +2,9 @@
 ## Author: Carlo Tacchella
 
 ## Request
-This exercise is based on the famous Super Mario Game.
+This exercise is based on the famous Super Mario game.
 Brief Game Rules
-1. R1 Super Mario, is out hero, he springs around the world, takes all the Coins he meets.
+1. R1 Super Mario, is our hero, he springs around the world, takes all the Coins he meets.
 2. R2 Super Mario has enemies. If an enemy kills Super Mario, a life is lost. When all lives have been lost, the game ends.
 3. R3 Super Mario can get extra lives by jumping each enemy consecutively without touching the ground.
 4. R4 Super Mario can earn 5 coins by defeating enemies with fireballs.
@@ -26,7 +26,6 @@ Consecutively jump on enemies:
 I choose to develop the project in Java 22.
 
 ## Assumptions
-(where to put the input file)
 - I will remove points to get a life every time points gained are over 1000.
 - I will always assume that default points value is 2000 and life default value is 3
 
@@ -45,13 +44,15 @@ In file "SuperMario-seq.txt"
 ### ConsecutivelyJumpOn<Monster type>
 Effects: 
 Point increment based on "Scoring system", based on the monster type.
-If points > 1000 Life count +1 and points-=1000 (from "Example A").
-With the previous behaviour that means the score is never higher than initial value + 999.
-Basing on R3 if we have previous action "ConsecutivelyJumpOn" we increment life by one assuming that other actions are actions that make Mario touching the ground.
+If points > 1000 Life count +1 and points-=1000 (as shown in "Example A").
+This behavior ensures that the score is never higher than the initial value + 999.
+Basing on R3 if we have previous action "ConsecutivelyJumpOn" 
+we increment the life count by one,
+assuming other actions involve Mario touching the ground.
 
 ### Invincible<Monster type>
 Life count: -1
-If Life count reach 0 end the game
+If Life count reaches 0 the game ends
 
 ### FireballOn<Monster type>
 Effects: 5 points
