@@ -12,43 +12,57 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
 
+    PointCounter game;
     @Test
     void gameTest01R1() {
         String input="coin,coin,coin,coin";
-        simulation(input);
+        game = simulation(input);
+        assertEquals(game.getLives(),3);
+        assertEquals(game.getPoints(),2040);
     }
 
     @Test
     void gameTest02R2() {
         String input="InvincibleBlargg,InvincibleBeach_Koopa,InvincibleBig_Boo,InvincibleBlargg";
         simulation(input);
+        game = simulation(input);
+        assertEquals(game.getLives(),-1);
+        assertEquals(game.getPoints(),2000);
     }
 
     @Test
     void gameTest03R2() {
         String input="InvincibleBlargg,InvincibleBeach_Koopa,InvincibleBig_Boo";
-        simulation(input);
+        game = simulation(input);
+        assertEquals(game.getLives(),0);
+        assertEquals(game.getPoints(),2000);
     }
 
     @Test
     void gameTest04R3() {
         //this should not increment lives nr (default=3)
         String input="ConsecutivelyJumpOnBanzai_Bill,Coin,ConsecutivelyJumpOnBig_Boo";
-        simulation(input);
+        game = simulation(input);
+        assertEquals(game.getLives(),4);
+        assertEquals(game.getPoints(),2010);
     }
 
     @Test
     void gameTest05R3() {
         //this should increment lives nr (default=3)
         String input="ConsecutivelyJumpOnBanzai_Bill,ConsecutivelyJumpOnBig_Boo,Coin";
-        simulation(input);
+        game = simulation(input);
+        assertEquals(game.getLives(),5);
+        assertEquals(game.getPoints(),2010);
     }
 
     @Test
     void gameTest06R4() {
         //this should increment lives nr (default=3)
         String input="FireballOnBanzai_Bill,FireballOnBig_Boo,FireballOnBlargg";
-        simulation(input);
+        game = simulation(input);
+        assertEquals(game.getLives(),3);
+        assertEquals(game.getPoints(),2150);
     }
 
     @Test
@@ -56,25 +70,33 @@ class MainTest {
         // 1600+800+400+200+10 = 3010 + 2000 default points
         // 3 life added for consecutively jumps
         String input="ConsecutivelyJumpOnBanzai_Bill,ConsecutivelyJumpOnBig_Boo,ConsecutivelyJumpOnBlargg,ConsecutivelyJumpOnBeach_Koopa,Coin";
-        simulation(input);
+        game = simulation(input);
+        assertEquals(game.getLives(),9);
+        assertEquals(game.getPoints(),2010);
     }
 
     @Test
     void gameTest08R5(){
         String input="ConsecutivelyJumpOnBig_Boo,Coin,ConsecutivelyJumpOnBeach_Koopa";
-        simulation(input);
+        game = simulation(input);
+        assertEquals(game.getLives(),4);
+        assertEquals(game.getPoints(),2210);
     }
 
     @Test
     void gameTest09R5(){
         String input="ConsecutivelyJumpOnBanzai_Bill,Coin,ConsecutivelyJumpOnBanzai_Bill";
-        simulation(input);
+        game = simulation(input);
+        assertEquals(game.getLives(),3);
+        assertEquals(game.getPoints(),2410);
     }
 
     @Test
     void gameTest09ExampleA(){
         String input="ConsecutivelyJumpOnBanzai_Bill,FireballOnBanzaiBill, Coin,Coin,Coin,ConsecutivelyJumpOnBlargg,InvincibleBig_Boo";
-        simulation(input);
+        game = simulation(input);
+        assertEquals(game.getLives(),3);
+        assertEquals(game.getPoints(),2880);
     }
 
     @Test
@@ -85,7 +107,9 @@ class MainTest {
                 "ConsecutivelyJumpOnBig_Boo" +
                 ",InvincibleBeach_Koopa," +
                 "Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin";
-        simulation(input);
+        game = simulation(input);
+        assertEquals(game.getLives(),2);
+        assertEquals(game.getPoints(),2880);
 
         /*
         points:2000
@@ -120,7 +144,7 @@ class MainTest {
          */
     }
 
-    private void simulation(String input){
+    private PointCounter simulation(String input){
 
         CommandsParser cp = new CommandsParser(input);
         ArrayList<String> actions = cp.getTokens();
@@ -136,9 +160,6 @@ class MainTest {
         System.out.println("Points: "+pc.getPoints());
         System.out.println("Lives: "+pc.getLives());
         System.out.println("Action received: "+actions.toString());
-    }
-
-    @AfterEach
-    void tearDown() {
+        return pc;
     }
 }

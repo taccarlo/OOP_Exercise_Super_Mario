@@ -2,7 +2,7 @@ package tc.main.actions;
 import tc.main.interfaces.Monster;
 
 public class ConsecutivelyJump extends Action{
-    private int pointChanged=0;
+    private final int pointChanged;
 
     @Override
     public int pointChanges() {

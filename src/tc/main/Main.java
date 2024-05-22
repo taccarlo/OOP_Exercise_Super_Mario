@@ -10,9 +10,11 @@ import java.util.logging.Level;
 
 /**
  * A simple command-line application for solving Super Mario Algorithm.
+ * This is the Main File
  *
  * @author Carlo Tacchella
  * @version v0.0.1
+ * @since 2024-05-22
  */
 
 public class Main {
@@ -20,7 +22,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Super Mario");
+        System.out.println("\n*****************\nSuper Mario\n*****************\n");
         LOGGER.setLevel(Level.ALL);
 
         LOGGER.info("Reading from the file the game actions.");
@@ -41,23 +43,17 @@ public class Main {
         PointCounter pc = new PointCounter(actions);
         boolean win = pc.gameSimulation();
 
+        System.out.println("\n*****************\nRESULTS: \n*****************\n");
         if(win){
             System.out.println("Winning game, life count never went down to zero.");
         }
         else{
-            System.out.println("Fail, life count went down to zero at least one time.");
+            System.out.println("Lost game, life count went down to zero at least one time.");
         }
 
-        System.out.println("Points: "+pc.getPoints());
-        System.out.println("Lives: "+pc.getLives());
-        System.out.println("Action received: "+actions.toString());
-
-        /*
-
-        //export executable example
-        //javadoc
-        //Exception handling custom
-         */
+        System.out.println("Total points Gained: "+pc.getPoints());
+        System.out.println("Total life Gained: "+pc.getLives());
+        System.out.println("Game actions: "+actions.toString());
 
     }
 }

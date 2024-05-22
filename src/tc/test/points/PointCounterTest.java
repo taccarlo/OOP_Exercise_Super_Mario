@@ -7,6 +7,13 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * This class contains the tests of PointCounter class
+ *
+ * @author Carlo Tacchella
+ * @version v0.0.1
+ * @since 2024-05-22
+ */
 class PointCounterTest {
     @Test
     void isStartingWithTest() {
@@ -14,8 +21,8 @@ class PointCounterTest {
         assertTrue(pc.isStartingWith("a","a"));
         assertFalse(pc.isStartingWith("ab","b"));
         assertFalse(pc.isStartingWith("ab","ac"));
-        assertTrue(pc.isStartingWith("aaaaa","aaa"));
-        assertFalse(pc.isStartingWith("aaaaaa","aaab"));
+        assertTrue(pc.isStartingWith("ciao","cia"));
+        assertFalse(pc.isStartingWith("ciaoatutti","ciaoo"));
     }
 
     @Test

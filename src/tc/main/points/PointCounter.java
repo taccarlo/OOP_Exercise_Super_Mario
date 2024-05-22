@@ -8,6 +8,13 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * This class convert an arraylist of string in an arraylist of actions and simulate the super mario game computing the resulting amount of points and lives.
+ *
+ * @author Carlo Tacchella
+ * @version v0.0.1
+ * @since 2024-05-22
+ */
 public class PointCounter {
 
     private static final Logger LOGGER = Logger.getLogger( PointCounter.class.getName() );
@@ -20,7 +27,7 @@ public class PointCounter {
 
     public PointCounter(ArrayList<String> actions){
         LOGGER.setLevel(Level.ALL);
-        actionsList = new ArrayList<Action>();
+        actionsList = new ArrayList<>();
         this.iterate(actions);
     }
 

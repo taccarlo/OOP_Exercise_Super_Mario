@@ -7,9 +7,16 @@ import java.util.StringTokenizer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * This class convert a single input string into an arraylist
+ *
+ * @author Carlo Tacchella
+ * @version v0.0.1
+ * @since 2024-05-22
+ */
 public class CommandsParser {
     private final ArrayList<String> tokens = new ArrayList<>();
-    private static final Logger LOGGER = Logger.getLogger( Main.class.getName() );
+    private static final Logger LOGGER = Logger.getLogger( CommandsParser.class.getName() );
 
     public CommandsParser(String str){
 
