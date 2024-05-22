@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875a6dd7-e112-4d81-a581-658ff01032d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tc/test/MainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/actions/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/actions/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/actions/Coin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/actions/ConsecutivelyJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/actions/ConsecutivelyJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/actions/Fireball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/actions/Fireball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/actions/Invincible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/actions/Invincible.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/builder/ActionBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/game/GameCreation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/main/points/PointCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/main/points/PointCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tc/test/points/PointCounterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/test/points/PointCounterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tc/test/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tc/test/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +50,7 @@
     "JUnit.MainTest.gameTest09ExampleA.executor": "Run",
     "JUnit.MainTest.gameTest09R5.executor": "Run",
     "JUnit.MainTest.gameTest10BigExample.executor": "Run",
+    "JUnit.MainTest.gameTest11BigExample.executor": "Run",
     "JUnit.PointCounterTest.executor": "Run",
     "JUnit.PointCounterTest.getMonsterTest.executor": "Run",
     "JUnit.PointCounterTest.isStartingWith.executor": "Debug",
@@ -102,22 +93,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.MainTest.gameTest10BigExample">
-    <configuration name="MainTest.gameTest07ScoringSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Super Mario" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tc.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tc.test" />
-      <option name="MAIN_CLASS_NAME" value="tc.test.MainTest" />
-      <option name="METHOD_NAME" value="gameTest07ScoringSystem" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainTest.gameTest08R5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Super Mario" />
       <extension name="coverage">
@@ -182,13 +157,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTest.gameTest11BigExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Super Mario" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tc.test" />
+      <option name="MAIN_CLASS_NAME" value="tc.test.MainTest" />
+      <option name="METHOD_NAME" value="gameTest11BigExample" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MainTest.gameTest10BigExample" />
+        <item itemvalue="JUnit.MainTest.gameTest11BigExample" />
         <item itemvalue="JUnit.MainTest.gameTest09ExampleA" />
         <item itemvalue="JUnit.MainTest.gameTest09R5" />
         <item itemvalue="JUnit.MainTest.gameTest08R5" />
-        <item itemvalue="JUnit.MainTest.gameTest07ScoringSystem" />
       </list>
     </recent_temporary>
   </component>

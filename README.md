@@ -25,6 +25,9 @@ you earn 200+50+10+10+10+1600 points, but you lose a life but... 1600 = 600 poin
 - Big_Boo: 800 points
 - Blargg: 1600 points
 
+### Fireball
+50 Points based on "Example A"
+
 ## About this Project
 I choose to develop the project in Java 22.
 

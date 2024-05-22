@@ -79,7 +79,12 @@ class MainTest {
 
     @Test
     void gameTest10BigExample(){
-        String input="ConsecutivelyJumpOnBanzai_Bill,FireballOnBanzai_Bill,Coin,Coin,Coin,Coin,Coin,InvincibleBig_Boo,FireballOnBanzai_Bill,InvincibleBlargg,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,FireballOnBanzai_Bill,ConsecutivelyJumpOnBeach_Koopa,ConsecutivelyJumpOnBig_Boo,InvincibleBeach_Koopa,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin";
+        String input="ConsecutivelyJumpOnBanzai_Bill,FireballOnBanzai_Bill,Coin,Coin,Coin,Coin,Coin,InvincibleBig_Boo,FireballOnBanzai_Bill,InvincibleBlargg," +
+                "Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin," +
+                "FireballOnBanzai_Bill,ConsecutivelyJumpOnBeach_Koopa," +
+                "ConsecutivelyJumpOnBig_Boo" +
+                ",InvincibleBeach_Koopa," +
+                "Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin";
         simulation(input);
 
         /*
@@ -91,25 +96,25 @@ class MainTest {
         FireballOnBanzai_Bill (50)
         Coin,Coin,Coin,Coin,Coin (50)
         InvincibleBig_Boo (-1 life)
-        FireballOnBanzai_Bill (200)
-        InvincibleBlargg (-1 life, so 1 life left)
-        Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin (150, 650 gained so far)
         FireballOnBanzai_Bill (50)
-        ConsecutivelyJumpOnBeach_Koopa (400, 1100 gained so far)
+        InvincibleBlargg (-1 life, so 1 life left)
+        Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin (150, 500 gained so far)
+        FireballOnBanzai_Bill (50)
+        ConsecutivelyJumpOnBeach_Koopa (400, 950 gained so far)
+        ConsecutivelyJumpOnBig_Boo (800, + 1 life without touching the ground R3)
 
-        points:3100
-        gainedPoints:1100
-        lives: 1
-
-        points:2100
-        gainedPoints:100
+        points:3750
+        gainedPoints:1750
         lives: 2
 
-        ConsecutivelyJumpOnBig_Boo (800, + 1 life without touching the ground R3)
+        points:2750
+        gainedPoints:750
+        lives: 3
+
         InvincibleBeach_Koopa (-1, still 2 lives)
         Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin,Coin (130)
 
-        points:3030
+        points:2880
         lives: 2
 
          */
